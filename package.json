@@ -1,0 +1,27 @@
+{
+  "name": "sewfit-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "家用缝纫机配件防撞试配纯后端 API（压脚 / 针板 / 转换柄）",
+  "type": "module",
+  "engines": {
+    "node": ">=20.20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fastify": "^5.6.1",
+    "sql.js": "^1.13.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/sql.js": "^1.4.9",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
